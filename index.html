@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 SCRATCH 培訓班/PYTHON 自組班</title>
-    <!-- 引入 Bootstrap 5, FontAwesome 與 Noto Sans TC -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
@@ -18,7 +17,7 @@
         }
         body { font-family: 'Noto Sans TC', sans-serif; background-color: #f4f7fa; color: #2c3e50; margin: 0; padding: 0; overflow-x: hidden; }
 
-        /* Banner 響應式標題：大畫面並排加 /，小畫面分行省略 / */
+        /* Banner 響應式標題 */
         .hero-section {
             background: linear-gradient(135deg, rgba(30,60,114,0.92), rgba(42,82,152,0.92)), 
                         url('https://drive.google.com/thumbnail?id=17uiuhJJHR5620euT18jWZt9VYeI4T2Ki&sz=w2000');
@@ -32,7 +31,7 @@
         .stats-card { background: white; border-radius: 20px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); margin-top: -60px; }
         .medal-count { font-size: 3.5rem; font-weight: 900; line-height: 1.2; }
 
-        /* 榜單表格美化：嚴格執行一筆一列 */
+        /* 榜單表格美化 */
         .award-title { border-left: 10px solid var(--dark-blue); padding-left: 15px; margin: 60px 0 25px; font-weight: 900; color: var(--dark-blue); }
         .table-container { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
         .award-table { width: 100%; margin-bottom: 0; border-collapse: collapse; }
@@ -41,7 +40,7 @@
         .award-table td { padding: 15px; border-bottom: 1px solid #e2e8f0; }
         .award-table tr:last-child td { border-bottom: none; }
 
-        /* 教學理念標籤 (共 8 個) */
+        /* 教學理念標籤 */
         .badge-container { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
         .badge-custom { padding: 8px 12px; border-radius: 8px; background: white; border: 1px solid #ddd; margin: 4px; font-weight: 700; font-size: 0.9rem; color: #444; display: inline-block; }
         .badge-strict { border: 2.5px solid #ef4444; color: #ef4444; background: #fff5f5; }
@@ -77,7 +76,6 @@
 </div>
 
 <div id="main-content">
-    <!-- Banner -->
     <section class="hero-section">
         <div class="container">
             <h1 class="responsive-title">
@@ -91,7 +89,6 @@
     </section>
 
     <div class="container">
-        <!-- 獎牌榮譽 -->
         <div class="stats-card text-center mb-5">
             <div class="row">
                 <div class="col-md-6 border-end">
@@ -106,16 +103,15 @@
                 <div class="col-md-6">
                     <h5 class="fw-bold mb-4">台北市貓咪盃 SCRATCH 程式競賽榜單</h5>
                     <div class="d-flex justify-content-around">
-                        <div><div class="medal-count fw-bold text-primary">14</div><div class="small fw-bold text-muted">特優</div></div>
-                        <div><div class="medal-count fw-bold text-success">15</div><div class="small fw-bold text-muted">優等</div></div>
-                        <div><div class="medal-count fw-bold" style="color:#f59e0b">35</div><div class="small fw-bold text-muted">佳作</div></div>
-                        <div><div class="medal-count fw-bold text-secondary">46</div><div class="small fw-bold text-muted">入選</div></div>
+                        <div><div class="medal-count fw-bold text-primary">20</div><div class="small fw-bold text-muted">特優</div></div>
+                        <div><div class="medal-count fw-bold text-success">4</div><div class="small fw-bold text-muted">優等</div></div>
+                        <div><div class="medal-count fw-bold" style="color:#f59e0b">40</div><div class="small fw-bold text-muted">佳作</div></div>
+                        <div><div class="medal-count fw-bold text-secondary">56</div><div class="small fw-bold text-muted">入選</div></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- 榜單表格：全國賽 -->
         <h3 class="award-title">全國貓咪盃 SCRATCH 程式競賽榜單</h3>
         <div class="table-container mb-5">
             <table class="award-table">
@@ -129,10 +125,10 @@
             </table>
         </div>
 
-        <!-- 榜單：台北市賽 (嚴格 108-113 一筆一列) -->
         <h3 class="award-title">台北市貓咪盃 SCRATCH 程式競賽榜單</h3>
         <ul class="nav nav-pills mb-3" id="cityTab" role="tablist">
-            <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tp113">113年</button></li>
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tp114">114年</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tp113">113年</button></li>
             <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tp112">112年</button></li>
             <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tp111">111年</button></li>
             <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tp110">110年</button></li>
@@ -140,8 +136,35 @@
             <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tp108">108年</button></li>
         </ul>
         <div class="tab-content table-container mb-5">
-            <!-- 113年 -->
-            <div class="tab-pane fade show active" id="tp113">
+            <div class="tab-pane fade show active" id="tp114">
+                <table class="award-table">
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td class="fw-bold text-primary">特優 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td class="fw-bold text-primary">特優 (健康國小)</td></tr>
+                    <tr><td>(114年度)</td><td>國小動畫組</td><td class="fw-bold text-primary">特優 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小動畫組</td><td class="fw-bold text-primary">特優 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國中生應組</td><td class="fw-bold text-primary">特優 (靜心中學)</td></tr>
+                    <tr><td>(114年度)</td><td>國中生應組</td><td class="fw-bold text-primary">特優 (大直國中)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td class="fw-bold text-success">優等 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td class="fw-bold text-success">優等 (光復國小)</td></tr>
+                    <tr><td>(114年度)</td><td>國小動畫組</td><td class="fw-bold text-success">優等 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國中生應組</td><td class="fw-bold text-success">優等 (靜心中學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小動畫組</td><td>佳作 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小動畫組</td><td>佳作 (健康國小)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td>佳作 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國中生應組</td><td>佳作 (仁愛國中)</td></tr>
+                    <tr><td>(114年度)</td><td>國中生應組</td><td>佳作 (延平中學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td>入選 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td>入選 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td>入選 (大佳國小)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td>入選 (復興小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小遊戲組</td><td>入選 (光復國小)</td></tr>
+                    <tr><td>(114年度)</td><td>國小動畫組</td><td>入選 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小動畫組</td><td>入選 (靜心小學)</td></tr>
+                    <tr><td>(114年度)</td><td>國小動畫組</td><td>入選 (光復國小)</td></tr>
+                    <tr><td>(114年度)</td><td>國中生應組</td><td>入選 (敦化國中)</td></tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="tp113">
                 <table class="award-table">
                     <tr><td>(113年度)</td><td>國中生應組</td><td>特優 (靜心中學)</td></tr>
                     <tr><td>(113年度)</td><td>國中生應組</td><td>特優 (靜心中學)</td></tr>
@@ -157,7 +180,6 @@
                     <tr><td>(113年度)</td><td>國中生應組</td><td>佳作 (中正國中)</td></tr>
                 </table>
             </div>
-            <!-- 112年 -->
             <div class="tab-pane fade" id="tp112">
                 <table class="award-table">
                     <tr><td>(112年度)</td><td>國小動畫組</td><td>特優 (市大附小)</td></tr>
@@ -176,7 +198,6 @@
                     <tr><td>(112年度)</td><td>國中遊戲組</td><td>佳作 (靜心中學)</td></tr>
                 </table>
             </div>
-            <!-- 111年 -->
             <div class="tab-pane fade" id="tp111">
                 <table class="award-table">
                     <tr><td>(111年度)</td><td>國中遊戲組</td><td>特優 (成淵國中)</td></tr>
@@ -195,7 +216,6 @@
                     <tr><td>(111年度)</td><td>國中遊戲組</td><td>佳作 (靜心中學)</td></tr>
                 </table>
             </div>
-            <!-- 110年 -->
             <div class="tab-pane fade" id="tp110">
                 <table class="award-table">
                     <tr><td>(110年度)</td><td>國小動畫組</td><td>特優 (靜心小學)</td></tr>
@@ -211,7 +231,6 @@
                     <tr><td>(110年度)</td><td>國中遊戲組</td><td>佳作 (麗山國中)</td></tr>
                 </table>
             </div>
-            <!-- 109年 -->
             <div class="tab-pane fade" id="tp109">
                 <table class="award-table">
                     <tr><td>(109年度)</td><td>國小遊戲組</td><td>特優 (民生國小)</td></tr>
@@ -225,7 +244,6 @@
                     <tr><td>(109年度)</td><td>國中動畫組</td><td>佳作 (仁愛國中)</td></tr>
                 </table>
             </div>
-            <!-- 108年 -->
             <div class="tab-pane fade" id="tp108">
                 <table class="award-table">
                     <tr><td>(108年度)</td><td>國中遊戲組</td><td>優等 (介壽國中)</td></tr>
@@ -235,7 +253,14 @@
             </div>
         </div>
 
-        <!-- 理念 -->
+        <h3 class="award-title">其他縣市競賽榜單</h3>
+        <div class="table-container mb-5">
+            <table class="award-table">
+                <tr><td>(114年度)</td><td>資訊科技競賽 (澎湖)</td><td class="fw-bold text-primary">特優</td></tr>
+                <tr><td>(114年度)</td><td>國中生應組 (澎湖)</td><td>甲等</td></tr>
+            </table>
+        </div>
+
         <div class="row align-items-center mb-5">
             <div class="col-lg-5 text-center mb-4">
                 <img src="https://drive.google.com/thumbnail?id=1QXKoDJHKBUhFIzW_kqDnipLRb8U9Zn01&sz=w1000" class="img-fluid rounded-4 shadow" alt="Coach">
@@ -245,7 +270,7 @@
                 <div class="badge-container">
                     <span class="badge-custom">國中遊戲組金牌連莊成功</span>
                     <span class="badge-custom">連續五年全國賽獲獎</span>
-                    <span class="badge-custom">連續五年台北市特優</span>
+                    <span class="badge-custom">連續六年台北市特優</span>
                     <span class="badge-custom">三組別均曾獲特優獎</span>
                     <span class="badge-custom">學生得獎佔比 30-40%</span>
                     <span class="badge-custom">深耕團隊分工協作</span>
@@ -256,7 +281,6 @@
             </div>
         </div>
 
-        <!-- 課程詳細介紹 -->
         <div class="course-intro-box border-scratch">
             <h3 class="fw-bold mb-3" style="color:var(--scratch-orange)">🐱 SCRATCH 線上競賽班 (開放報名)</h3>
             <p class="fw-bold mb-2">【2026 寒假僅此一班！以競賽為目標】</p>
@@ -280,7 +304,6 @@
             </ul>
         </div>
 
-        <!-- 方案卡片 -->
         <h2 class="text-center fw-bold mt-5 mb-4">選擇您的奪金之路</h2>
         <div class="row g-4 mb-5">
             <div class="col-md-4">
@@ -309,7 +332,6 @@
             </div>
         </div>
 
-        <!-- 報名表單 -->
         <section id="reg-form" class="bg-white rounded-4 shadow p-5 my-5">
             <h2 class="text-center fw-bold mb-5">立即搶位報名</h2>
             <form id="enrollmentForm">
@@ -337,7 +359,6 @@
             </form>
         </section>
 
-        <!-- 安全與隱私聲明 -->
         <section class="my-5">
             <div class="p-4 rounded-4 security-box shadow-sm">
                 <h6 class="fw-bold text-secondary mb-3"><i class="fas fa-shield-alt me-2"></i>隱私權與資訊安全聲明</h6>
@@ -353,7 +374,6 @@
     </div>
 </div>
 
-<!-- 成功畫面 -->
 <div id="success-view" class="success-section">
     <div class="success-card">
         <h1 style="color:var(--python-green); font-weight: 900;">報名成功！ 🎉</h1>
